@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptor-Factor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <img src="asset/logo.png" alt="Logo alura Latam" class="logo-header">
+</header>
+<main>
+    <div class="contenedor-formulario">
+
+        <form class="form-flex">
+            <div class	="caja-texto">
+                <label>
+                    <textarea id="textoArea" placeholder="Ingrese el texto aqui" style="border-radius :15px;padding: 10px ;background-color:#eaeaea"></textarea>
+                </label>
+                <div class="info-form">
+                    <i class="fa fa-circle-info fa-2x"></i>
+                    <span>
+							Solo letras minúsculas y sin acentos
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="boton_accion">
+                <button onclick="encrypt()" type="button" class="botones-pagina" id="botonEncriptar">Encriptar</button>
+                <button onclick="desencrypt()" type="button" class="botones-pagina" id="botonDesencritpar">Desencriptar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="contenedor_resultado">
+        <div id="textoFinal"></div>
+        <div class="mensaje-inicial">
+            <img src="asset/muneco.png" alt="Imagen del muñeco" class="imagen-muneco">
+
+            <h3 class="titulo-mensaje">
+                Ningún mensaje fue encontrado
+            </h3>
+
+            <p class="descripcion-mensaje">
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+        </div>
+        <button class="botones-pagina boton-copiar" onclick="copiarContenido()">Copiar</button>
+    </div>
+
+
+</main>
+<footer>
+    <div class="footer-info">
+        <h6>Encriptador de texto by Factor Huerta Esteffan Osterling</h6>
+    </div>
+    <div class="footer-redes">
+        <ul>
+            <li>
+                <a class="enlace-footer" target="_blank" href="https://github.com/efactorhuerta">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a class="enlace-footer" href="https://www.linkedin.com/in/osterling-factor-huerta-771339216/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
